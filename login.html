@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        #welcome {
+            margin: 40px;
+            color:wheat;
+            cursor: pointer;
+        }
+
+        #hiddenText {
+            display: none;
+            color: white;
+        }
+        button{
+            margin-top: 10px;
+            padding: 10px 30px;
+            border-radius: 7px;
+            font-size: 15px;
+            background-color: orangered;
+            color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="welcome">Welcome All</h1>
+
+    <p id="hiddenText">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias omnis autem quia unde commodi voluptas ad quis asperiores voluptatibus nisi impedit consectetur ipsa earum odit dolores maxime, vitae dignissimos possimus! Ab cupiditate, rerum magni est molestias perspiciatis. Hic eius similique, illum ducimus nesciunt, atque reiciendis ad perferendis, aliquam error odit. Minus soluta tenetur numquam aut cum aperiam cupiditate accusamus deleniti qui fuga vero blanditiis magnam quod vitae, debitis eius iure. Accusamus modi explicabo eligendi iste ea et eum, vero, necessitatibus repudiandae tempore, esse veniam aperiam corrupti quas animi maiores aliquam sequi laudantium? Alias aspernatur aliquam sed accusamus, quibusdam blanditiis dicta voluptas autem tempore! Error odit accusamus, eum delectus facilis laudantium doloribus, minus commodi maiores, iure velit inventore debitis. Pariatur sed dolores consequatur, ratione laborum veritatis molestiae repellendus amet culpa, consectetur error maiores cupiditate itaque ad quae accusantium, a cumque magni eius? Vitae minus aliquid magnam velit distinctio doloribus, officiis molestias, repellat id laboriosam possimus dolor beatae cum. Explicabo nihil commodi, possimus iusto laborum nobis. Nam blanditiis harum nesciunt eos nisi unde facere? Vel commodi corporis voluptates. Neque laborum quis ducimus iure, nisi ullam earum nemo accusantium. Atque maiores optio ducimus non ipsam eligendi in. Quo, consequatur nam? Nisi mollitia quas possimus earum qui eius corporis quisquam ipsum perspiciatis. Temporibus, facere. Tenetur eaque ipsa necessitatibus pariatur veritatis molestias reprehenderit laboriosam perferendis excepturi corrupti modi earum, nobis doloribus hic ab, nulla harum odio? Expedita, id tenetur obcaecati sunt quisquam ducimus, illo corporis libero, necessitatibus quia ut. Dicta perferendis mollitia rem culpa dolores soluta in quae recusandae tempora voluptatibus, sit neque eaque facilis cupiditate vel cumque fuga totam aperiam officiis non hic illo quas earum adipisci. Quaerat, corrupti. Repudiandae, pariatur vitae laborum excepturi maxime soluta esse voluptatem quasi quam atque praesentium possimus fuga eveniet quod, et, necessitatibus quas similique beatae minima aspernatur. Quas laborum pariatur adipisci, aut voluptatum, minus neque eum perferendis facilis dolores sunt qui eligendi, sed maiores? Sed iusto voluptas accusamus tenetur, quo repellendus molestias sint. Voluptate dolorem alias dignissimos quo a ipsum ut nesciunt quibusdam at dolorum non, eos porro incidunt recusandae dolore temporibus dolores hic in, aliquam eius, molestiae perferendis. Voluptatem, nisi quis. Illo quod dignissimos necessitatibus voluptas culpa quas aliquid unde. Perspiciatis laboriosam, adipisci voluptas molestiae accusantium, quaerat omnis quidem itaque ipsum accusamus ratione illum! Et ex mollitia quae iusto ea, consequuntur aliquid incidunt. Harum ab, ipsam distinctio quasi asperiores iure rem quidem corporis beatae in exercitationem ipsa ducimus nobis temporibus. Omnis reiciendis facere iusto obcaecati commodi, perspiciatis voluptatum ratione ipsam! Non culpa soluta perferendis quam ducimus voluptatum provident vero veniam animi minima inventore omnis, exercitationem aspernatur ex nulla! Ipsum quae asperiores, molestias corrupti animi dolor recusandae fugit aliquam minima! Alias tenetur eum rem officiis aut voluptate hic, assumenda exercitationem pariatur, modi soluta eveniet in cupiditate. Aut distinctio quos quidem mollitia, sed repellat aliquam ad delectus ab quam eum minus consequuntur perferendis, facilis unde rem enim amet, quia explicabo! Quam laboriosam debitis commodi. Quas dicta sint fuga at eum et architecto. Est labore atque mollitia. Soluta nulla unde dolores excepturi, odio reiciendis labore, natus beatae rem ea voluptatum officia fugiat iste. Velit similique cumque veritatis rem. Ullam at animi, hic eius facere, minima odit fugiat voluptates consectetur modi sapiente quos sit nesciunt deserunt perspiciatis incidunt maiores nam, asperiores amet expedita. Nesciunt beatae eligendi ab quae culpa aut rerum sunt ratione dicta sint iure odit, porro, qui debitis saepe numquam sed iste cum, maiores amet repudiandae? Omnis autem doloremque officia veniam voluptatibus quisquam similique beatae optio. Maxime corporis molestiae eligendi, doloremque impedit dicta voluptates praesentium, at excepturi quam quae omnis, eos dolorum blanditiis nesciunt? Explicabo soluta quidem nisi maxime.
+    </p>
+
+    <button onclick="nextPage()">
+        Next 
+    </button>
+
+    <script>
+        let welcome = document.getElementById("welcome");
+        let hiddenText = document.getElementById("hiddenText");
+
+        
+        welcome.addEventListener("mouseover", function () {
+            welcome.style.color = "wheat";
+        });
+
+        
+        welcome.addEventListener("mouseout", function () {
+            welcome.style.color = "orangered";
+            hiddenText.style.display = "block";
+        });
+
+        
+        function nextPage() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
